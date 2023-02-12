@@ -88,6 +88,7 @@ class _InterestsScreenState extends State<InterestsScreen> {
         backgroundColor: Colors.white.withOpacity(
           clampDouble(scrollY / 100 - 2, 0, 1),
         ),
+        toolbarOpacity: clampDouble(scrollY / 100 - 2, 0, 1),
       ),
       body: Scrollbar(
         controller: _scrollController,
